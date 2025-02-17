@@ -10,7 +10,8 @@ and if you have good cpu you can set it higher for faster processing
 ```js
 // index.js
 
-line 100:  let maxWorker = 12 // change this
+// line 100:
+  let maxWorker = 12 // change this
 ```
 
 after you extracted the video frames you should comment the `extractFrames` function
