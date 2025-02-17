@@ -45,7 +45,7 @@ async function playAscii(audioPath, framesDir, useCached) {
 		const frameDurationMs = 1000 / 30;
 		let startTime;
 
-		const player = new ffplay(__dirName + audioPath);
+		const player = new ffplay(__dirname + audioPath);
 		for (let i = 0; i < frames.length; i++) {
 			const frame = frames[i];
 
