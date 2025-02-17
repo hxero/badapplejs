@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@jimp/utils": "^1.6.0",
+    "ffplay": "^1.1.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "jimp": "^1.6.0"
+  }
+}
