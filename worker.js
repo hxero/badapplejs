@@ -93,7 +93,7 @@ async function imageToBraille(imagePath) {
 	}
 
 	const index = parseInt(imagePath.match(/frame(\d+)\.bmp/)[1]); // sorting
-	await fs.writeFile(`./caches/${imagePath.split("/").at(-1).split(".")[0]}.txt`, Ascii);
+	await fs.writeFile(`${__dirname}/caches/${imagePath.split("/").at(-1).split(".")[0]}.txt`, Ascii);
 
 	return [Ascii, index];
 }
