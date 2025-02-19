@@ -45,6 +45,7 @@ async function playAscii(audioPath, framesDir, useCached) {
 		const frameDurationMs = 1000 / 30;
 		let startTime;
 
+		console.clear();
 		const player = new ffplay(__dirname + audioPath);
 		for (let i = 0; i < frames.length; i++) {
 			const frame = frames[i];
@@ -54,7 +55,7 @@ async function playAscii(audioPath, framesDir, useCached) {
 			}
 			const frameStart = Date.now();
 
-			console.clear();
+			process.stdout.write("\x1b[0f");
 			process.stdout.write(frame);
 
 			const elapsed = frameStart - startTime;
