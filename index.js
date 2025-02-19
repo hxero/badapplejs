@@ -27,6 +27,8 @@ async function makeDir(dirPath) {
 async function extractFrames(videoPath, outputDir, frameRate = 30, scale = "240x180") {
 	console.log("extracting frames..")
 
+	if (dirExist(__dirname + outputDir)) return;
+
 	await makeDir(__dirname + outputDir);
 
 	return await new Promise((resolve, reject) => {
